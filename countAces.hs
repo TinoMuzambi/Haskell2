@@ -4,3 +4,4 @@ data Card = NormalCard Rank Suit | Joker deriving Eq
 
 countAces :: [Card] -> Int
 
+countAces [] = 0
