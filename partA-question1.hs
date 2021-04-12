@@ -1,6 +1,6 @@
 gf :: (a -> a) -> [a] -> [a]
 
-gf bf xs = [bf x | x <- xs]
+gf f xs = [f x | x <- xs]
 
 bf,df :: [Int] -> [Int]
 
