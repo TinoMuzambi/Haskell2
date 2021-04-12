@@ -6,7 +6,7 @@ bf,df :: [Int] -> [Int]
 
 bf [] = []
 bf [x] = [abs x] 
-bf (x:y:xs) = (abs x) : y: bf xs 
+bf (x:y:xs) = (abs x) : y : bf xs 
 
 df [] = []
 df [x] = [x + 1] 
