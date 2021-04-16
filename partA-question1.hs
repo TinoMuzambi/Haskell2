@@ -3,7 +3,7 @@ gf :: (a -> a) -> [a] -> [a]
 -- TODO make (+1) work on only every second item.
 gf f xs = [f x | x <- xs]
 
-bf,df :: [Int] -> [Int]
+bf, df :: [Int] -> [Int]
 
 bf [] = []
 bf [x] = [abs x] 
