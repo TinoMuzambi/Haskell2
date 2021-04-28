@@ -1,7 +1,8 @@
 gf :: (a -> a) -> [a] -> [a]
 
--- TODO make (+1) work on only every second item.
-gf f xs = [f x | x <- xs]
+gf f [] = []
+gf f [x] = [f x] 
+gf f (x:y:xs) =  (f x) : y : gf f xs 
 
 bf, df :: [Int] -> [Int]
 
