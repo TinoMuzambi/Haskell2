@@ -5,6 +5,6 @@ data Card = NormalCard Rank Suit | Joker deriving Eq
 countAces :: [Card] -> Int
 
 countAces [] = 0
-countAces (n:ns) = if n == Joker 
+countAces (n:ns) = if n == Joker || n == NormalCard Ace _
                         then 1 + countAces (tail ns)
                         else 0 + countAces (tail ns)
