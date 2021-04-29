@@ -5,6 +5,6 @@ data Card = NormalCard Rank Suit | Joker deriving (Eq, Show)
 countAces :: [Card] -> Int
 
 countAces [] = 0
-countAces (n:ns) = if n == Joker || n == NormalCard Ace Hearts || n == NormalCard Ace Clubs || n == NormalCard Ace Diamonds || n == NormalCard Ace Spades
+countAces (n:ns) = if (n == Joker || n == NormalCard Ace Hearts || n == NormalCard Ace Clubs || n == NormalCard Ace Diamonds || n == NormalCard Ace Spades)
                         then 1 + countAces (tail ns)
                         else 0 + countAces (tail ns)

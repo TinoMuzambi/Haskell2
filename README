@@ -1,2 +1,10 @@
-< CurrentState,InputSymbol,OutputSymbol,NewState >
-q1, a, L, q1
+<Q0, a, _, Q1>
+<Q1, b, b, Q1>
+<Q1, a, a, Q1>
+<Q1, _, _, Q2>
+<Q2, a, _, Q3>
+<Q3, b, b, Q3>
+<Q3, _, _, Q0>
+<Q0, b, _, Q4>
+<Q4, _, _, Q5>
+<Q5, _, _, QAccept>
